@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>KframeAop</groupId>
 	<artifactId>KframeAop</artifactId>
@@ -9,29 +10,24 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 	<name>KframeAop</name>
 	<description>A graphical application to view and manage ZooKeeper
 	</description>
-	
-	
+
+
 
 	<dependencies>
-		
-		
+		<!-- <dependency> <groupId>org.aspectj</groupId> <artifactId>aspectjrt</artifactId> 
+			<version>${aspectjrt.version}</version> </dependency> <dependency> <groupId>org.aspectj</groupId> 
+			<artifactId>aspectjweaver</artifactId> <version>${aspectjrt.version}</version> 
+			</dependency> -->
 		<dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjrt</artifactId>
-            <version>${aspectjrt.version}</version>
-        </dependency>
- 
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>${aspectjrt.version}</version>
-        </dependency>
-        
-		<!-- 单元测试添加 -->		
+			<artifactId>cglib</artifactId>
+			<groupId>cglib</groupId>
+			<version>3.3.1-SNAPSHOT</version>
+		</dependency>
+		<!-- 单元测试添加 -->
 		<dependency>
-		    <groupId>junit</groupId>
-		    <artifactId>junit</artifactId>
-		    <version>4.12</version>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
 		</dependency>
 
 	</dependencies>
@@ -46,8 +42,10 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 
 	<scm>
 		<url>http://code.google.com/p/zooviewer/source/browse/trunk</url>
-		<connection>scm:svn:http://zooviewer.googlecode.com/svn/trunk</connection>
-		<developerConnection>scm:svn:https://zooviewer.googlecode.com/svn/trunk</developerConnection>
+		<connection>scm:svn:http://zooviewer.googlecode.com/svn/trunk
+		</connection>
+		<developerConnection>scm:svn:https://zooviewer.googlecode.com/svn/trunk
+		</developerConnection>
 	</scm>
 
 	<issueManagement>
@@ -59,5 +57,5 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 	<properties>
 		<aspectjrt.version>1.6.11</aspectjrt.version>
 	</properties>
-	
+
 </project>
