@@ -10,10 +10,23 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 	<description>A graphical application to view and manage ZooKeeper
 	</description>
 	
-
+	
 
 	<dependencies>
 		
+		
+		<dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>${aspectjrt.version}</version>
+        </dependency>
+ 
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectjrt.version}</version>
+        </dependency>
+        
 		<!-- 单元测试添加 -->		
 		<dependency>
 		    <groupId>junit</groupId>
@@ -43,6 +56,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 	</issueManagement>
 
 
-
-
+	<properties>
+		<aspectjrt.version>1.6.11</aspectjrt.version>
+	</properties>
+	
 </project>
